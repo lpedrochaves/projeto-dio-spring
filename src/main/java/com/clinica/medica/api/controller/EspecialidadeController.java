@@ -31,15 +31,6 @@ public class EspecialidadeController {
 	@Autowired
 	private EspecialidadeService especialidadeService;
 
-	@GetMapping
-//	@ApiOperation(value="Lista todas as especialidades", notes="Listagem de Especialidades")
-//	@ApiResponses(value= {
-//	@ApiResponse(code=200, message="Retorna todas as especialidades"),
-//	@ApiResponse(code=401, message="Erro de autenticação"),
-//	@ApiResponse(code=403, message="Não há permissão para acessar o recurso"),
-//	@ApiResponse(code=404, message="Recurso não encontrado"),
-//	@ApiResponse(code=505, message="Exceção interna da aplicação"),
-//	})
 	public ResponseEntity<List<EspecialidadeGetDTO>> getAll() {
 		return ResponseEntity.ok(especialidadeService.getAll());
 

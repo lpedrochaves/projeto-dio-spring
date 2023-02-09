@@ -25,26 +25,6 @@ public class MedicoService {
 	@Autowired
 	private EspecialidadeRepository especialidadeRepository;
 
-//	private MedicoInserirDTO convertToObjectDto(Medico m) {
-//
-//		EspecialidadeInserirDTO espDTO = new EspecialidadeInserirDTO();
-//		Especialidade esp = new Especialidade();
-//		espDTO.setId(esp.getId());
-//		espDTO.setTipoEspecialidade(esp.getTipoEspecialidade());
-//		
-//
-//		MedicoInserirDTO medico = new MedicoInserirDTO();
-//		medico.setId(m.getId());
-//		medico.setNome(m.getNome());
-//		medico.setEmail(m.getEmail());
-//		medico.setTelefone(m.getTelefone());
-//		medico.setCpf(m.getCpf());
-//		medico.setCrm(m.getCrm());
-//		medico.setAtivo(true);
-//		medico.setEndereco(m.getEndereco());
-//		medico.setEspecialidade(espDTO);
-//		return medico;
-//	}
 
 	public List<MedicoInserirDTO> getAll() {
 		List<Medico> medicos = medicoRepository.findAll();
